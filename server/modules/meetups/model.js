@@ -12,6 +12,10 @@ const MeetupSchema = new Schema({
 	},
   eventDate: {
     type: Date
+  },
+  group: {
+    type: Schema.Types.ObjectId,
+    ref: 'Group'
   }
 }, { timestamps: true });
 
